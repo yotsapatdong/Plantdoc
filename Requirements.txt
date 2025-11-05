@@ -1,6 +1,17 @@
+# Core packages
+streamlit==1.39.0
 ultralytics==8.3.25
-streamlit
-opencv-python-headless
-torch
-torchvision
-Pillow
+opencv-python-headless==4.10.0.84
+Pillow==10.4.0
+numpy==1.26.4
+pandas==2.2.3
+
+# PyTorch (ใช้ CPU เพราะ Streamlit Cloud ไม่มี GPU)
+torch==2.2.2
+torchvision==0.17.2
+torchaudio==2.2.2
+
+# Optional but useful packages
+matplotlib==3.9.2
+tqdm==4.66.5
+requests==2.32.3
