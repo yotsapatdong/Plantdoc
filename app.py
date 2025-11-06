@@ -21,7 +21,7 @@ if not os.path.exists(model_path):
         f.write(r.content)
     st.success("✅ Model downloaded successfully!")
     
-model = YOLO("yolo11n.pt")
+model = YOLO(model_path)
 
 uploaded_file = st.file_uploader("อัปโหลดภาพใบพืช", type=["jpg", "jpeg", "png"])
 
