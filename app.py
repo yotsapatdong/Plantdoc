@@ -15,7 +15,7 @@ model_path = "best.pt"
 
 if not os.path.exists(model_path):
     st.write("📥 Downloading model from Google Drive...")
-    url = "https://drive.google.com/file/d/1bgYi59vfzhvNZ9aL1-_Bi6pH2NfOyCbh/view?usp=drive_link"  # 👈 YOUR_FILE_ID เป็นของคุณ
+    url = "https://drive.google.com/uc?id=1bgYi59vfzhvNZ9aL1-_Bi6pH2NfOyCbh"  # 👈 YOUR_FILE_ID เป็นของคุณ
     r = requests.get(url)
     with open(model_path, "wb") as f:
         f.write(r.content)
